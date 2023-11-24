@@ -1,0 +1,61 @@
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 2px solid #000000;
+    border-radius: 0;
+    padding-top: 10px;
+    width: 100%; /* Set the input width to 100% */
+    transition: border-color 0.2s;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #000000;
+    font-weight: bold;
+    transition: 0.2s;
+    margin-left: 10px;
+}
+
+.form-group input:focus,
+.form-group input:valid {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: #000000;
+}
+
+.box_1 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background: white;
+    height: 100vh;
+    border: 2px solid;
+}
+
+
+
+.hh {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form {
+    /* width: 100%; Set the form width to 100% */
+    max-width: 500px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form within box_2 */
+    padding: 20px; /* Add padding to the form */
+    border: 2px solid;
+    
+}

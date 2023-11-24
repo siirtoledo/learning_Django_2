@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        {% for single_data in single_blog_data%}
+
+        <h1>{{single_data.title}}</h1>
+        <ul>
+            <li>{{single_data.id}}</li>
+            <li>{{single_data.title}}</li>
+            <li>{{single_data.description}}</li>
+            <li>{{single_data.author}}</li>
+            <li>{{single_data.created_on}}</li>
+        </ul>
+    
+
+    {% endfor%}
+
+    </div>
+
+
+</body>
+</html>
